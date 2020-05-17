@@ -167,9 +167,31 @@
                   </v-avatar>
                 </v-list-item-avatar>
                 <v-list-item-content>
-                  <v-list-item-title>Kamal Pratap</v-list-item-title>
+                  <v-list-item-title>Kamal Pratap &bull; 2:30 pm</v-list-item-title>
                   <v-list-item-subtitle>Hey guys, I've pushed my progess to master branch.</v-list-item-subtitle>
                 </v-list-item-content>
+              </v-list-item>
+            </v-list>
+          </div>
+        </v-card>
+
+        <v-card outlined class="mt-4">
+          <v-card-title>Tasks</v-card-title>
+
+          <div>
+            <v-list two-line>
+              <v-list-item v-for="i in 6" :key="i">
+                <v-list-item-content>
+                  <v-list-item-title>
+                    <v-checkbox label="Add checkout button" />
+                  </v-list-item-title>
+                  <v-list-item-subtitle>2 min ago &bull; Due &bull; 03:00 pm &bull; 07/05/2020</v-list-item-subtitle>
+                </v-list-item-content>
+                <v-list-item-avatar size="30">
+                  <v-avatar color="primary">
+                    <span class="white--text">KP</span>
+                  </v-avatar>
+                </v-list-item-avatar>
               </v-list-item>
             </v-list>
           </div>
