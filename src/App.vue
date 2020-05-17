@@ -23,7 +23,7 @@
           </v-list-item-content>
         </v-list-item>
 
-        <v-list-item v-for="(item, i) in dashboard_items1" :key="i" link>
+        <v-list-item v-for="item in dashboard_items1" :key="item.title" link>
           <v-list-item-icon>
             <v-icon>{{ item.icon }}</v-icon>
           </v-list-item-icon>
@@ -35,7 +35,7 @@
 
         <v-divider />
 
-        <v-list-item v-for="(item, i) in dashboard_items2" :key="i" link>
+        <v-list-item v-for="item in dashboard_items2" :key="item.title" link>
           <v-list-item-icon>
             <v-icon>{{ item.icon }}</v-icon>
           </v-list-item-icon>
@@ -46,12 +46,20 @@
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
+
+    <v-content>
+      <main-area />
+    </v-content>
   </v-app>
 </template>
 
 <script>
+import MainArea from "@/components/main-area.vue";
+
 export default {
   name: "App",
+
+  components: { MainArea },
 
   data: () => ({
     drawer: false,
