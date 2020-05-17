@@ -146,6 +146,26 @@
             </v-list-item>
           </v-list>
         </v-card>
+
+        <v-card outlined class="mt-4">
+          <v-card-title>Team Notes</v-card-title>
+
+          <div>
+            <v-list two-line>
+              <v-list-item v-for="i in 4" :key="i">
+                <v-list-item-avatar>
+                  <v-avatar color="primary">
+                    <span class="white--text headline">KP</span>
+                  </v-avatar>
+                </v-list-item-avatar>
+                <v-list-item-content>
+                  <v-list-item-title>Kamal Pratap</v-list-item-title>
+                  <v-list-item-subtitle>Hey guys, I've pushed my progess to master branch.</v-list-item-subtitle>
+                </v-list-item-content>
+              </v-list-item>
+            </v-list>
+          </div>
+        </v-card>
       </v-col>
     </v-row>
   </v-container>
