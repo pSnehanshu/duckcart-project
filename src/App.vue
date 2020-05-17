@@ -1,33 +1,51 @@
 <template>
   <v-app>
-    <v-app-bar app color="primary" dark>
-      <div class="d-flex align-center">
-        <v-img
-          alt="Vuetify Logo"
-          class="shrink mr-2"
-          contain
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
-          transition="scale-transition"
-          width="40"
-        />
+    <!-- Top bar -->
+    <v-toolbar flat>
+      <v-app-bar-nav-icon @click="drawer = !drawer" />
+      <v-spacer />
+      <span>
+        <b>EMPLOYEES</b> / PROFILES
+      </span>
+      <v-spacer />
+      <v-btn depressed color="transparent" :ripple="false">Back</v-btn>
+    </v-toolbar>
 
-        <v-img
-          alt="Vuetify Name"
-          class="shrink mt-1 hidden-sm-and-down"
-          contain
-          min-width="100"
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-name-dark.png"
-          width="100"
-        />
-      </div>
+    <!-- Sidebar -->
+    <v-navigation-drawer v-model="drawer" temporary app>
+      <v-list>
+        <v-list-item>
+          <v-list-item-icon>
+            <v-app-bar-nav-icon @click="drawer = !drawer" />
+          </v-list-item-icon>
+          <v-list-item-content>
+            <v-list-item-title style="color: #2962FF;">INOGIT</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
 
-      <v-spacer></v-spacer>
+        <v-list-item v-for="(item, i) in dashboard_items1" :key="i" link>
+          <v-list-item-icon>
+            <v-icon>{{ item.icon }}</v-icon>
+          </v-list-item-icon>
 
-      <v-btn href="https://github.com/vuetifyjs/vuetify/releases/latest" target="_blank" text>
-        <span class="mr-2">Latest Release</span>
-        <v-icon>mdi-open-in-new</v-icon>
-      </v-btn>
-    </v-app-bar>
+          <v-list-item-content>
+            <v-list-item-title>{{ item.title }}</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+
+        <v-divider />
+
+        <v-list-item v-for="(item, i) in dashboard_items2" :key="i" link>
+          <v-list-item-icon>
+            <v-icon>{{ item.icon }}</v-icon>
+          </v-list-item-icon>
+
+          <v-list-item-content>
+            <v-list-item-title>{{ item.title }}</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+      </v-list>
+    </v-navigation-drawer>
   </v-app>
 </template>
 
@@ -36,7 +54,23 @@ export default {
   name: "App",
 
   data: () => ({
-    //
+    drawer: false,
+    dashboard_items1: [
+      { title: "Dashboard", icon: "mdi-view-dashboard" },
+      { title: "Candidates", icon: "mdi-account-supervisor" },
+      { title: "Jobs", icon: "mdi-briefcase" },
+      { title: "Mailbox", icon: "mdi-message-text" },
+      { title: "Settings", icon: "mdi-cog" }
+    ],
+    dashboard_items2: [
+      { title: "Pools", icon: "mdi-waves" },
+      { title: "Assessments", icon: "mdi-poll-box" },
+      { title: "Team Members", icon: "mdi-google-circles-communities" },
+      { title: "Billing", icon: "mdi-currency-usd" },
+      { title: "Guidelines", icon: "mdi-clipboard-text" },
+      { title: "Feedback", icon: "mdi-message-alert" },
+      { title: "Contact Us", icon: "mdi-comment-question" }
+    ]
   })
 };
 </script>
