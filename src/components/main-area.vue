@@ -1,5 +1,5 @@
 <template>
-  <v-container>
+  <v-container fluid>
     <v-row>
       <!-- Left side -->
       <v-col>
@@ -22,7 +22,7 @@
         <v-tabs-items v-model="current_tab" class="mt-5">
           <v-tab-item>Empty</v-tab-item>
           <v-tab-item>
-            <v-card outlined shaped>
+            <v-card outlined>
               <v-card-title>Information</v-card-title>
               <v-simple-table>
                 <tbody>
@@ -47,6 +47,16 @@
                   </tr>
                 </tbody>
               </v-simple-table>
+            </v-card>
+
+            <v-card outlined class="mt-4">
+              <v-card-title>Experience</v-card-title>
+              <v-card-text>
+                <h2>Lead Designer</h2>
+                <div>Google, Inc.</div>
+                <div>Sep 2019 - Dec 2019</div>
+                <p>During my internship, I developed UI and UX for an android app called Google Keep. I completely Re-Designed the application.</p>
+              </v-card-text>
             </v-card>
           </v-tab-item>
           <v-tab-item>Empty</v-tab-item>
