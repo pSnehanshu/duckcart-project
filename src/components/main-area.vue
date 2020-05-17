@@ -4,16 +4,24 @@
       <!-- Left side -->
       <v-col cols="8">
         <!-- User info -->
-        <v-row>
-          <v-col>
-            <v-img :src="require('../assets/logo.svg')" class="my-3" contain height="200" />
-          </v-col>
-          <v-col>
-            <h1>Kamal Pratap</h1>
-            <p>Fullstack developer</p>
-            <p>Last activity</p>
-          </v-col>
-        </v-row>
+        <v-list three-line>
+          <v-list-item>
+            <v-list-item-avatar size="200">
+              <v-avatar size="200">
+                <v-img :src="require('../assets/logo.svg')" class="my-3" contain height="200" />
+              </v-avatar>
+            </v-list-item-avatar>
+            <v-list-item-content>
+              <v-list-item-title>
+                <h1>Kamal Pratap</h1>
+              </v-list-item-title>
+              <v-list-item-subtitle>
+                <p>Fullstack developer</p>
+                <p>Last activity</p>
+              </v-list-item-subtitle>
+            </v-list-item-content>
+          </v-list-item>
+        </v-list>
 
         <v-tabs fixed-tabs v-model="current_tab">
           <v-tab v-for="tab in info_tabs" :key="tab.name">{{ tab.label }}</v-tab>
