@@ -2,7 +2,7 @@
   <v-container fluid>
     <v-row>
       <!-- Left side -->
-      <v-col>
+      <v-col cols="8">
         <!-- User info -->
         <v-row>
           <v-col>
@@ -15,7 +15,7 @@
           </v-col>
         </v-row>
 
-        <v-tabs v-model="current_tab">
+        <v-tabs fixed-tabs v-model="current_tab">
           <v-tab v-for="tab in info_tabs" :key="tab.name">{{ tab.label }}</v-tab>
         </v-tabs>
 
@@ -98,7 +98,55 @@
       </v-col>
 
       <!-- Right sode -->
-      <v-col></v-col>
+      <v-col cols="4">
+        <v-card outlined>
+          <v-list>
+            <v-list-item>
+              <v-list-item-content>Evaluation</v-list-item-content>
+              <div class="d-flex">
+                <v-btn depressed color="transparent">
+                  <v-icon left>mdi-calendar-blank</v-icon>Schedule
+                </v-btn>
+                <v-btn icon>
+                  <v-icon>mdi-share-variant</v-icon>
+                </v-btn>
+                <v-btn icon>
+                  <v-icon>mdi-send</v-icon>
+                </v-btn>
+                <v-btn depressed color="transparent">More</v-btn>
+              </div>
+            </v-list-item>
+            <v-list-item>
+              <v-list-item-content>Job Name</v-list-item-content>
+              <div class="d-flex">
+                <v-btn depressed color="transparent">
+                  <v-icon left>mdi-check</v-icon>Proceed
+                </v-btn>
+                <v-btn icon>
+                  <v-icon>mdi-cancel</v-icon>
+                </v-btn>
+                <v-btn icon>
+                  <v-icon>mdi-dots-horizontal</v-icon>
+                </v-btn>
+              </div>
+            </v-list-item>
+            <v-list-item>
+              <v-list-item-content>Pool Name</v-list-item-content>
+              <div class="d-flex">
+                <v-btn depressed color="transparent">
+                  <v-icon left>mdi-check</v-icon>Proceed
+                </v-btn>
+                <v-btn icon>
+                  <v-icon>mdi-cancel</v-icon>
+                </v-btn>
+                <v-btn icon>
+                  <v-icon>mdi-dots-horizontal</v-icon>
+                </v-btn>
+              </div>
+            </v-list-item>
+          </v-list>
+        </v-card>
+      </v-col>
     </v-row>
   </v-container>
 </template>
