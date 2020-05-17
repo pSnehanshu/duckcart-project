@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <!-- Top bar -->
-    <v-toolbar flat>
+    <v-app-bar app color="white" elevate-on-scroll>
       <v-app-bar-nav-icon @click="drawer = !drawer" />
       <v-spacer />
       <span>
@@ -9,7 +9,7 @@
       </span>
       <v-spacer />
       <v-btn depressed color="transparent" :ripple="false">Back</v-btn>
-    </v-toolbar>
+    </v-app-bar>
 
     <!-- Sidebar -->
     <v-navigation-drawer v-model="drawer" temporary app>
