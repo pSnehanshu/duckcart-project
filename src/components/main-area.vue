@@ -52,12 +52,44 @@
             <v-card outlined class="mt-4">
               <v-card-title>Experience</v-card-title>
               <v-card-text>
-                <h2>Lead Designer</h2>
-                <div>Google, Inc.</div>
-                <div>Sep 2019 - Dec 2019</div>
-                <p>During my internship, I developed UI and UX for an android app called Google Keep. I completely Re-Designed the application.</p>
+                <div>
+                  <h2>Lead Designer</h2>
+                  <div>Google, Inc.</div>
+                  <div>Sep 2019 - Dec 2019</div>
+                  <p>During my internship, I developed UI and UX for an android app called Google Keep. I completely Re-Designed the application.</p>
+                </div>
               </v-card-text>
             </v-card>
+
+            <v-row>
+              <v-col>
+                <v-card outlined>
+                  <v-card-title>Education</v-card-title>
+                  <v-card-text>
+                    <div>
+                      <h2>SSC</h2>
+                      <div>St. Mary High School</div>
+                      <div>Sep 2016</div>
+                      <div>CGPA- 9.2</div>
+                    </div>
+                    <div class="mt-3">
+                      <h2>Higher Secondary</h2>
+                      <div>St. Mary High School</div>
+                      <div>Sep 2018</div>
+                      <div>Percentage- 96.5%</div>
+                    </div>
+                  </v-card-text>
+                </v-card>
+              </v-col>
+              <v-col>
+                <v-card outlined>
+                  <v-card-title>Skills</v-card-title>
+                  <v-card-text>
+                    <v-chip v-for="(skill, i) in skills" :key="i" class="mr-2 mt-2">{{skill}}</v-chip>
+                  </v-card-text>
+                </v-card>
+              </v-col>
+            </v-row>
           </v-tab-item>
           <v-tab-item>Empty</v-tab-item>
           <v-tab-item>Empty</v-tab-item>
@@ -81,6 +113,23 @@ export default {
       { name: "assessments", label: "Assessments" },
       { name: "files", label: "Files" },
       { name: "resume", label: "Resume" }
+    ],
+    skills: [
+      "Python",
+      "Web Development",
+      "CSS",
+      "Web Development",
+      "Python",
+      "CSS",
+      "Web Development",
+      "CSS",
+      "Python",
+      "Python",
+      "CSS",
+      "Web Development",
+      "Python",
+      "Web Development",
+      "CSS"
     ]
   })
 };
