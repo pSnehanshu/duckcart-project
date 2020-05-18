@@ -193,7 +193,10 @@
                   </v-avatar>
                 </v-list-item-avatar>
                 <v-list-item-content>
-                  <v-list-item-title>Kamal Pratap &bull; 2:30 pm</v-list-item-title>
+                  <v-list-item-title>
+                    Kamal Pratap
+                    <span class="caption">&bull; 2:30 pm</span>
+                  </v-list-item-title>
                   <v-list-item-subtitle>Hey guys, I've pushed my progess to master branch.</v-list-item-subtitle>
                 </v-list-item-content>
               </v-list-item>
@@ -267,6 +270,6 @@ export default {
 
 <style scoped>
 .text-blue {
-  color: #2962ff!important;
+  color: #2962ff !important;
 }
 </style>
