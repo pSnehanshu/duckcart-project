@@ -31,6 +31,11 @@
           <v-tab-item>Empty</v-tab-item>
           <v-tab-item>
             <v-card outlined>
+              <div class="float-right">
+                <v-btn icon fab>
+                  <v-icon>mdi-plus</v-icon>
+                </v-btn>
+              </div>
               <v-card-title>Information</v-card-title>
               <v-simple-table>
                 <tbody>
@@ -58,6 +63,11 @@
             </v-card>
 
             <v-card outlined class="mt-4">
+              <div class="float-right">
+                <v-btn icon fab>
+                  <v-icon>mdi-plus</v-icon>
+                </v-btn>
+              </div>
               <v-card-title>Experience</v-card-title>
               <v-card-text>
                 <div>
@@ -72,6 +82,11 @@
             <v-row>
               <v-col>
                 <v-card outlined>
+                  <div class="float-right">
+                    <v-btn icon fab>
+                      <v-icon>mdi-plus</v-icon>
+                    </v-btn>
+                  </div>
                   <v-card-title>Education</v-card-title>
                   <v-card-text>
                     <div>
@@ -91,6 +106,11 @@
               </v-col>
               <v-col>
                 <v-card outlined>
+                  <div class="float-right">
+                    <v-btn icon fab>
+                      <v-icon>mdi-plus</v-icon>
+                    </v-btn>
+                  </div>
                   <v-card-title>Skills</v-card-title>
                   <v-card-text>
                     <v-chip v-for="(skill, i) in skills" :key="i" class="mr-2 mt-2">{{skill}}</v-chip>
@@ -156,6 +176,12 @@
         </v-card>
 
         <v-card outlined class="mt-4">
+          <div class="float-right">
+            <v-btn icon fab>
+              <v-icon>mdi-plus</v-icon>
+            </v-btn>
+          </div>
+
           <v-card-title>Team Notes</v-card-title>
 
           <div>
@@ -176,6 +202,12 @@
         </v-card>
 
         <v-card outlined class="mt-4">
+          <div class="float-right">
+            <v-btn icon fab>
+              <v-icon>mdi-plus</v-icon>
+            </v-btn>
+          </div>
+
           <v-card-title>Tasks</v-card-title>
 
           <div>
