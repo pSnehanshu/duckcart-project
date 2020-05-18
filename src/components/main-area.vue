@@ -189,7 +189,7 @@
           <div>
             <v-list two-line>
               <v-list-item v-for="i in 4" :key="i">
-                <v-list-item-avatar>
+                <v-list-item-avatar size="50">
                   <v-avatar color="primary">
                     <span class="white--text headline">KP</span>
                   </v-avatar>
@@ -225,7 +225,7 @@
                   <v-list-item-subtitle>2 min ago &bull; Due &bull; 03:00 pm &bull; 07/05/2020</v-list-item-subtitle>
                 </v-list-item-content>
                 <v-list-item-avatar size="30">
-                  <v-avatar color="primary">
+                  <v-avatar color="primary" min-width="30">
                     <span class="white--text">KP</span>
                   </v-avatar>
                 </v-list-item-avatar>
