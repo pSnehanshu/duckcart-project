@@ -132,7 +132,7 @@
             <v-list-item>
               <v-list-item-content>Evaluation</v-list-item-content>
               <div class="d-flex">
-                <v-btn depressed color="transparent">
+                <v-btn depressed text class="text-blue">
                   <v-icon left>mdi-calendar-blank</v-icon>Schedule
                 </v-btn>
                 <v-btn icon>
@@ -141,13 +141,13 @@
                 <v-btn icon>
                   <v-icon>mdi-send</v-icon>
                 </v-btn>
-                <v-btn depressed color="transparent">More</v-btn>
+                <v-btn depressed text class="text-blue">More</v-btn>
               </div>
             </v-list-item>
             <v-list-item>
               <v-list-item-content>Job Name</v-list-item-content>
               <div class="d-flex">
-                <v-btn depressed color="transparent">
+                <v-btn depressed text class="text-blue">
                   <v-icon left>mdi-check</v-icon>Proceed
                 </v-btn>
                 <v-btn icon>
@@ -161,7 +161,7 @@
             <v-list-item>
               <v-list-item-content>Pool Name</v-list-item-content>
               <div class="d-flex">
-                <v-btn depressed color="transparent">
+                <v-btn depressed text class="text-blue">
                   <v-icon left>mdi-check</v-icon>Proceed
                 </v-btn>
                 <v-btn icon>
@@ -264,3 +264,9 @@ export default {
   })
 };
 </script>
+
+<style scoped>
+.text-blue {
+  color: #2962ff!important;
+}
+</style>
