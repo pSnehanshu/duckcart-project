@@ -2,26 +2,28 @@
   <v-container fluid>
     <v-row>
       <!-- Left side -->
-      <v-col cols="8">
+      <v-col cols="12" md="8">
         <!-- User info -->
-        <v-list three-line>
-          <v-list-item>
-            <v-list-item-avatar size="200">
+        <v-row>
+          <v-col cols="12" sm="4" lg="3">
+            <div class="p-5">
               <v-avatar size="200">
-                <v-img :src="require('../assets/logo.svg')" class="my-3" contain height="200" />
+                <v-img
+                  src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                  class="my-3"
+                  height="200"
+                />
               </v-avatar>
-            </v-list-item-avatar>
-            <v-list-item-content>
-              <v-list-item-title>
-                <h1>Kamal Pratap</h1>
-              </v-list-item-title>
-              <v-list-item-subtitle>
-                <p>Fullstack developer</p>
-                <p>Last activity</p>
-              </v-list-item-subtitle>
-            </v-list-item-content>
-          </v-list-item>
-        </v-list>
+            </div>
+          </v-col>
+          <v-col cols="12" sm="8" lg="9">
+            <div class="p-5">
+              <h1>Kamal Pratap</h1>
+              <p>Fullstack developer</p>
+              <p>Last activity</p>
+            </div>
+          </v-col>
+        </v-row>
 
         <v-tabs fixed-tabs v-model="current_tab">
           <v-tab v-for="tab in info_tabs" :key="tab.name">{{ tab.label }}</v-tab>
@@ -80,7 +82,7 @@
             </v-card>
 
             <v-row>
-              <v-col>
+              <v-col cols="12" sm="6">
                 <v-card outlined>
                   <div class="float-right">
                     <v-btn icon fab>
@@ -104,7 +106,7 @@
                   </v-card-text>
                 </v-card>
               </v-col>
-              <v-col>
+              <v-col cols="12" sm="6">
                 <v-card outlined>
                   <div class="float-right">
                     <v-btn icon fab>
@@ -120,13 +122,13 @@
             </v-row>
           </v-tab-item>
           <v-tab-item>Empty</v-tab-item>
-          <v-tab-item>Empty</v-tab-item>
+          <v-tab-item>Empcolsty</v-tab-item>
           <v-tab-item>Empty</v-tab-item>
         </v-tabs-items>
       </v-col>
 
       <!-- Right sode -->
-      <v-col cols="4">
+      <v-col cols="12" md="4">
         <v-card outlined>
           <v-list>
             <v-list-item>
