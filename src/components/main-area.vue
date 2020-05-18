@@ -18,9 +18,9 @@
           </v-col>
           <v-col cols="12" sm="8" lg="9">
             <div class="p-5">
-              <h1>Kamal Pratap</h1>
-              <p>Fullstack developer</p>
-              <p>Last activity</p>
+              <h1 class="font-weight-light">Kamal Pratap</h1>
+              <div class="subtitle-1">Fullstack developer</div>
+              <div class="subtitle-1">Last activity</div>
             </div>
           </v-col>
         </v-row>
