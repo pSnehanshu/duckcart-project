@@ -1,5 +1,7 @@
 # duckcart-project
 
+Live link: [https://duckcart-project.now.sh](https://duckcart-project.now.sh)
+
 ## Project setup
 ```
 npm install
